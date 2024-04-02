@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Righteous&family=Sarala:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <title>Cadastro de Plantas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Cadastre sua Planta</h2>
+        </div>
+        <form id="form" class="form" onsubmit="return false">
+            <div class="form-control">
+                <label for="plant-name">Nome da Planta</label>
+                <input type="text" id="plant-name" autocomplete="off" placeholder="Digite o nome da planta..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="plant-species">Espécie da Planta</label>
+                <input type="text" id="plant-species" autocomplete="off" placeholder="Digite a espécie da planta..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+
+            <div class="form-control">
+                <label for="plant-height">Altura Máxima da Planta</label>
+                <input type="text" step="0.1" id="plant-height" autocomplete="off"
+                    placeholder="Digite a altura máxima da planta..." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            <button type="submit" id="btn-cad">Cadastrar</button>
+            <div class="form-success">
+                <p>Mensagem de Sucesso</p>
+            </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/2a8bb4e292.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
